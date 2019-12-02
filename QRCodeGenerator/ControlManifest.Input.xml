@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="PCFGallerySamples" constructor="QRCodeGenerator" version="0.0.1" display-name-key="QRCodeGenerator" description-key="QRCodeGenerator description" control-type="standard">
+     <property name="buttonValue" display-name-key="buttonValue" description-key="Button_value" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="QRCodeLink" display-name-key="QRCodeLink"  description-key="QRCodeLink" of-type="SingleLine.Text" usage="input" required="false"/>
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
