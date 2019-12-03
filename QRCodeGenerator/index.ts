@@ -40,7 +40,6 @@ export class QRCodeGenerator implements ComponentFramework.StandardControl<IInpu
 	 */
 	public updateView(context: ComponentFramework.Context<IInputs>): void {
 		this.props.buttonValue = context.parameters.buttonValue.raw!;
-		console.log(context.parameters.QRCodeLink.raw);
 		this.props.buttonLink = (context.parameters.QRCodeLink.raw! === null) ? window.location.href : context.parameters.QRCodeLink.raw!;
 		ReactDOM.render(
 			React.createElement(
